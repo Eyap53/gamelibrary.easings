@@ -14,6 +14,9 @@ namespace Easings
     using Math = UnityEngine.Mathf;
 #endif
 
+    /// <summary>
+    /// Static class that contains the easing functions.
+    /// </summary>
     static public class Easing
     {
         /// <summary>
@@ -107,6 +110,7 @@ namespace Easings
         /// <summary>
         /// Modeled after the parabola y = x^2
         /// </summary>
+        /// <see href="https://easings.net/en#easeInQuad">EaseInQuad</see>
         static public float QuadraticEaseIn(float p)
         {
             return p * p;
@@ -115,6 +119,7 @@ namespace Easings
         /// <summary>
         /// Modeled after the parabola y = -x^2 + 2x
         /// </summary>
+        /// <see href="https://easings.net/en#easeOutQuad">EaseOutQuad</see>
         static public float QuadraticEaseOut(float p)
         {
             return -(p * (p - 2));
@@ -125,6 +130,7 @@ namespace Easings
         /// y = (1/2)((2x)^2)             ; [0, 0.5)
         /// y = -(1/2)((2x-1)*(2x-3) - 1) ; [0.5, 1]
         /// </summary>
+        /// <see href="https://easings.net/en#easeInOutQuad">EaseInOutQuad</see>
         static public float QuadraticEaseInOut(float p)
         {
             if (p < 0.5f)
@@ -140,6 +146,7 @@ namespace Easings
         /// <summary>
         /// Modeled after the cubic y = x^3
         /// </summary>
+        /// <see href="https://easings.net/en#easeInCubic">EaseInCubic</see>
         static public float CubicEaseIn(float p)
         {
             return p * p * p;
@@ -148,6 +155,7 @@ namespace Easings
         /// <summary>
         /// Modeled after the cubic y = (x - 1)^3 + 1
         /// </summary>
+        /// <see href="https://easings.net/en#easeOutCubic">EaseOutCubic</see>
         static public float CubicEaseOut(float p)
         {
             float f = (p - 1);
@@ -159,6 +167,7 @@ namespace Easings
         /// y = (1/2)((2x)^3)       ; [0, 0.5)
         /// y = (1/2)((2x-2)^3 + 2) ; [0.5, 1]
         /// </summary>
+        /// <see href="https://easings.net/en#easeInOutCubic">EaseInOutCubic</see>
         static public float CubicEaseInOut(float p)
         {
             if (p < 0.5f)
@@ -175,6 +184,7 @@ namespace Easings
         /// <summary>
         /// Modeled after the quartic x^4
         /// </summary>
+        /// <see href="https://easings.net/en#easeInQuart">EaseInQuart</see>
         static public float QuarticEaseIn(float p)
         {
             return p * p * p * p;
@@ -183,6 +193,7 @@ namespace Easings
         /// <summary>
         /// Modeled after the quartic y = 1 - (x - 1)^4
         /// </summary>
+        /// <see href="https://easings.net/en#easeOutQuart">EaseOutQuart</see>
         static public float QuarticEaseOut(float p)
         {
             float f = (p - 1);
@@ -194,6 +205,7 @@ namespace Easings
         // y = (1/2)((2x)^4)        ; [0, 0.5)
         // y = -(1/2)((2x-2)^4 - 2) ; [0.5, 1]
         /// </summary>
+        /// <see href="https://easings.net/en#easeInOutQuart">EaseInOutQuart</see>
         static public float QuarticEaseInOut(float p)
         {
             if (p < 0.5f)
@@ -210,6 +222,7 @@ namespace Easings
         /// <summary>
         /// Modeled after the quintic y = x^5
         /// </summary>
+        /// <see href="https://easings.net/en#easeInQuint">EaseInQuint</see>
         static public float QuinticEaseIn(float p)
         {
             return p * p * p * p * p;
@@ -218,6 +231,7 @@ namespace Easings
         /// <summary>
         /// Modeled after the quintic y = (x - 1)^5 + 1
         /// </summary>
+        /// <see href="https://easings.net/en#easeOutQuint">EaseOutQuint</see>
         static public float QuinticEaseOut(float p)
         {
             float f = (p - 1);
@@ -229,6 +243,7 @@ namespace Easings
         /// y = (1/2)((2x)^5)       ; [0, 0.5)
         /// y = (1/2)((2x-2)^5 + 2) ; [0.5, 1]
         /// </summary>
+        /// <see href="https://easings.net/en#easeInOutQuint">EaseInOutQuint</see>
         static public float QuinticEaseInOut(float p)
         {
             if (p < 0.5f)
@@ -245,6 +260,7 @@ namespace Easings
         /// <summary>
         /// Modeled after quarter-cycle of sine wave
         /// </summary>
+        /// <see href="https://easings.net/en#easeInSine">EaseInSine</see>
         static public float SineEaseIn(float p)
         {
             return (float)Math.Sin((p - 1) * Math.PI * 0.5f) + 1;
@@ -253,6 +269,7 @@ namespace Easings
         /// <summary>
         /// Modeled after quarter-cycle of sine wave (different phase)
         /// </summary>
+        /// <see href="https://easings.net/en#easeOutSine">EaseOutSine</see>
         static public float SineEaseOut(float p)
         {
             return (float)Math.Sin(p * Math.PI * 0.5f);
@@ -261,6 +278,7 @@ namespace Easings
         /// <summary>
         /// Modeled after half sine wave
         /// </summary>
+        /// <see href="https://easings.net/en#easeInOutSine">EaseInOutSine</see>
         static public float SineEaseInOut(float p)
         {
             return 0.5f * (1 - (float)Math.Cos(p * Math.PI));
@@ -269,6 +287,7 @@ namespace Easings
         /// <summary>
         /// Modeled after shifted quadrant IV of unit circle
         /// </summary>
+        /// <see href="https://easings.net/en#easeInCirc">EaseInCirc</see>
         static public float CircularEaseIn(float p)
         {
             return 1 - (float)Math.Sqrt(1 - (p * p));
@@ -277,6 +296,7 @@ namespace Easings
         /// <summary>
         /// Modeled after shifted quadrant II of unit circle
         /// </summary>
+        /// <see href="https://easings.net/en#easeOutCirc">EaseOutCirc</see>
         static public float CircularEaseOut(float p)
         {
             return (float)Math.Sqrt((2 - p) * p);
@@ -287,6 +307,7 @@ namespace Easings
         /// y = (1/2)(1 - Math.Sqrt(1 - 4x^2))           ; [0, 0.5)
         /// y = (1/2)(Math.Sqrt(-(2x - 3)*(2x - 1)) + 1) ; [0.5, 1]
         /// </summary>
+        /// <see href="https://easings.net/en#easeInOutCirc">EaseInOutCirc</see>
         static public float CircularEaseInOut(float p)
         {
             if (p < 0.5f)
@@ -302,6 +323,7 @@ namespace Easings
         /// <summary>
         /// Modeled after the exponential function y = 2^(10(x - 1))
         /// </summary>
+        /// <see href="https://easings.net/en#easeInCirc">EaseInExpo</see>
         static public float ExponentialEaseIn(float p)
         {
             return (p == 0.0f) ? p : (float)Math.Pow(2, 10 * (p - 1));
@@ -310,6 +332,7 @@ namespace Easings
         /// <summary>
         /// Modeled after the exponential function y = -2^(-10x) + 1
         /// </summary>
+        /// <see href="https://easings.net/en#easeOutCirc">EaseOutExpo</see>
         static public float ExponentialEaseOut(float p)
         {
             return (p == 1.0f) ? p : 1 - (float)Math.Pow(2, -10 * p);
@@ -320,6 +343,7 @@ namespace Easings
         /// y = (1/2)2^(10(2x - 1))         ; [0,0.5)
         /// y = -(1/2)*2^(-10(2x - 1))) + 1 ; [0.5,1]
         /// </summary>
+        /// <see href="https://easings.net/en#easeInOutCirc">EaseInOutExpo</see>
         static public float ExponentialEaseInOut(float p)
         {
             if (p == 0.0 || p == 1.0) return p;
@@ -337,6 +361,7 @@ namespace Easings
         /// <summary>
         /// Modeled after the damped sine wave y = sin(13pi/2*x)*Math.Pow(2, 10 * (x - 1))
         /// </summary>
+        /// <see href="https://easings.net/en#easeInElastic">EaseInElastic</see>
         static public float ElasticEaseIn(float p)
         {
             return (float)Math.Sin(13 * Math.PI * 0.5f * p) * (float)Math.Pow(2, 10 * (p - 1));
@@ -345,6 +370,7 @@ namespace Easings
         /// <summary>
         /// Modeled after the damped sine wave y = sin(-13pi/2*(x + 1))*Math.Pow(2, -10x) + 1
         /// </summary>
+        /// <see href="https://easings.net/en#easeOutElastic">EaseOutElastic</see>
         static public float ElasticEaseOut(float p)
         {
             return (float)Math.Sin(-13 * Math.PI * 0.5f * (p + 1)) * (float)Math.Pow(2, -10 * p) + 1;
@@ -355,6 +381,7 @@ namespace Easings
         /// y = (1/2)*sin(13pi/2*(2*x))*Math.Pow(2, 10 * ((2*x) - 1))      ; [0,0.5)
         /// y = (1/2)*(sin(-13pi/2*((2x-1)+1))*Math.Pow(2,-10(2*x-1)) + 2) ; [0.5, 1]
         /// </summary>
+        /// <see href="https://easings.net/en#easeInOutElastic">EaseInOutElastic</see>
         static public float ElasticEaseInOut(float p)
         {
             if (p < 0.5f)
@@ -370,6 +397,7 @@ namespace Easings
         /// <summary>
         /// Modeled after the overshooting cubic y = x^3-x*sin(x*pi)
         /// </summary>
+        /// <see href="https://easings.net/en#easeInBack">EaseInBack</see>
         static public float BackEaseIn(float p)
         {
             return p * p * p - p * (float)Math.Sin(p * Math.PI);
@@ -378,6 +406,7 @@ namespace Easings
         /// <summary>
         /// Modeled after overshooting cubic y = 1-((1-x)^3-(1-x)*sin((1-x)*pi))
         /// </summary>	
+        /// <see href="https://easings.net/en#easeOutBack">EaseOutBack</see>
         static public float BackEaseOut(float p)
         {
             float f = (1 - p);
@@ -389,6 +418,7 @@ namespace Easings
         /// y = (1/2)*((2x)^3-(2x)*sin(2*x*pi))           ; [0, 0.5)
         /// y = (1/2)*(1-((1-x)^3-(1-x)*sin((1-x)*pi))+1) ; [0.5, 1]
         /// </summary>
+        /// <see href="https://easings.net/en#easeInOutBack">EaseInOutBack</see>
         static public float BackEaseInOut(float p)
         {
             if (p < 0.5f)
@@ -404,14 +434,18 @@ namespace Easings
         }
 
         /// <summary>
+        /// Modeled with a bouncing effect at the start.
         /// </summary>
+        /// <see href="https://easings.net/en#easeInBounce">EaseInBounce</see>
         static public float BounceEaseIn(float p)
         {
             return 1 - BounceEaseOut(1 - p);
         }
 
         /// <summary>
+        /// Modeled with a bouncing effect at the end.
         /// </summary>
+        /// <see href="https://easings.net/en#easeOutBounce">EaseOutBounce</see>
         static public float BounceEaseOut(float p)
         {
             if (p < 4 / 11.0f)
@@ -433,7 +467,9 @@ namespace Easings
         }
 
         /// <summary>
+        /// Modeled with a bouncing effect at the start and at the end.
         /// </summary>
+        /// <see href="https://easings.net/en#easeInOutBounce">EaseInOutBounce</see>
         static public float BounceEaseInOut(float p)
         {
             if (p < 0.5f)
