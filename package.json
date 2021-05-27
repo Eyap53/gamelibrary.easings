@@ -1,0 +1,19 @@
+{
+    "name": "com.eyap53.easings",
+    "version": "1.0.0",
+    "displayName": "Easings",
+    "description": "Unity Package for easings functions.",
+    "unity": "2018.1",
+    "unityRelease": "0f1",
+    "keywords": [
+        "Easings",
+        "Interpolation",
+        "Math"
+    ],
+    "dependencies": {},
+    "author": {
+        "name": "Mael Lacour",
+        "email": "public.dev@maellacour.com",
+        "url": "https://github.com/Eyap53/Easings"
+    }
+}
