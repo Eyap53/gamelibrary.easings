@@ -7,6 +7,10 @@ You can visualize the different easing functions that have been implemented in t
 
 You can be install this package via the Unity Package Manager (UPM). In the top left of the Packages window, navigate to Add Package -> Add package from git URL and paste https://github.com/Eyap53/Easings.git.
 
+## Documentation
+
+For the documentation please read [Easings.md](./Documentation~/Easings.md).
+
 ## License
 
 This package is provided under the MIT License. See [LICENSE.md](./LICENSE.md).
