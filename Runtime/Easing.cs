@@ -1,18 +1,14 @@
 /*
- * Easings (https://github.com/Eyap53/UPM_Easings)
+ * Easings (https://github.com/Eyap53/Easings)
  * Initial work made by : Antony Woods (teamwoods.org), provided with the Do What The Fuck You Want To Public License (See https://github.com/acron0/Easings/blob/master/LICENSE).
  * Modifications : Mael Lacour
- * Licensed under MIT (https://github.com/Eyap53/UPM_Easings/blob/main/LICENSE.md)
+ * Licensed under MIT (https://github.com/Eyap53/Easings/blob/main/LICENSE.md)
  */
 
 namespace Easings
 {
 
     using System;
-#if UNITY
-    using UnityEngine;
-    using Math = UnityEngine.Mathf;
-#endif
 
     /// <summary>
     /// Static class that contains the easing functions.
