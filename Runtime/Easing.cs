@@ -1,8 +1,8 @@
 /*
- * Easings (https://github.com/Eyap53/Easings)
+ * Easings (https://gitlab.com/Eyap/unity-easings)
  * Initial work made by : Antony Woods (teamwoods.org), provided with the Do What The Fuck You Want To Public License (See https://github.com/acron0/Easings/blob/master/LICENSE).
  * Modifications : Mael Lacour
- * Licensed under MIT (https://github.com/Eyap53/Easings/blob/main/LICENSE.md)
+ * Licensed under MIT (https://gitlab.com/Eyap/unity-easings/-/blob/main/LICENSE.md)
  */
 
 namespace Easings
