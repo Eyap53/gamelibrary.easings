@@ -1,11 +1,11 @@
 /*
- * Easings (https://gitlab.com/Eyap/unity-easings)
+ * Easings (https://gitlab.com/Eyap/gamelibrary.easings)
  * Initial work made by : Antony Woods (teamwoods.org), provided with the Do What The Fuck You Want To Public License (See https://github.com/acron0/Easings/blob/master/LICENSE).
  * Modifications : Mael Lacour
- * Licensed under MIT (https://gitlab.com/Eyap/unity-easings/-/blob/main/LICENSE.md)
+ * Licensed under MPL-2.0 (https://gitlab.com/Eyap/gamelibrary.easings/-/blob/main/LICENSE.md)
  */
 
-namespace Easings
+namespace GameLibrary.Easings
 {
 
     using System;

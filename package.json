@@ -1,16 +1,21 @@
 {
-    "name": "com.eyap53.easings",
-    "version": "1.0.0",
-    "displayName": "Easings",
-    "description": "Unity Package for easings functions.",
-    "keywords": [
-        "Easings",
-        "Interpolation",
-        "Math"
-    ],
-    "author": {
-        "name": "Mael Lacour",
-        "email": "public.dev@maellacour.com",
-        "url": "https://github.com/Eyap53/Easings"
-    }
+  "name": "com.maellacour.gamelibrary.easings",
+  "version": "1.0.0",
+  "displayName": "Easings",
+  "description": "Unity Package that provide easings functions, to specify the rate of change of a parameter over time.",
+  "unity": "2020.1",
+  "unityRelease": "0f1",
+  "dependencies": {},
+  "keywords": [
+    "Easings",
+    "Interpolation",
+    "Math"
+  ],
+  "license": "MPL-2.0",
+  "licensesUrl": "https://mozilla.org/MPL/2.0/",
+  "author": {
+    "name": "Mael Lacour",
+    "email": "public.dev@maellacour.com",
+    "url": "https://maellacour.com"
+  }
 }
